@@ -219,4 +219,5 @@ gulp.task(
 
 gulp.task("devel", function () {
   gulp.watch("src/sass/**/*.*css", gulp.series("sass", "asset"));
+  gulp.watch("assets/js/*.js", gulp.series("asset"));
 });
